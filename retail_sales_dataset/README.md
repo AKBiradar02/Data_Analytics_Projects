@@ -1,58 +1,138 @@
-# Project Heading
+# Title
 
-🏷️ GitHub Project Description
+1. 🛍️ Retail Sales Data Analytics Project (2023)
 
-Retail Sales Performance Analysis — Data Analytics with Python
+🚀 Complete Data Analytics Workflow using Python • SQL • Power BI
 
-A complete data analytics project that explores a retail sales dataset using Python, Pandas, Matplotlib, and Seaborn.
-The analysis uncovers customer behavior, sales patterns, and seasonal trends to support data-driven business insights.
-Includes EDA, feature engineering, visualizations, and actionable recommendations — a perfect end-to-end analytics case study.
+**Author:** Abhay Biradar | Data Analyst  
+**Tech Stack:** Python | MySQL | Power BI  
+**Dataset:** Retail Sales Dataset (Kaggle)
 
-💡 Short GitHub Tagline (for repository header)
+---
 
-“Data-driven insights from retail sales using Python | EDA, Visualization, and Business Insights”
+## 📖 Project Overview
 
-🧩 Key Features (use in README Highlights or repo pinned note)
+This project demonstrates a **complete data analytics pipeline**, from raw data preprocessing to SQL-based analysis and Power BI visualization.  
+The goal is to analyze **retail sales patterns**, identify **top-performing product categories**, and explore **customer behavior by demographics**.
 
-✅ Cleaned and transformed 1000+ retail transaction records
-✅ Performed Exploratory Data Analysis (EDA) using Pandas & Seaborn
-✅ 6+ high-quality visuals: sales trends, category analysis, customer demographics
-✅ Derived actionable business insights & recommendations
-✅ Exported cleaned dataset for SQL and Power BI integration
-✅ All visuals saved for dashboard/report integration
+---
 
-🔖 Suggested GitHub Topics / Tags
+## 🧩 Workflow Overview
 
-When creating the repo, add these under Topics (for search visibility):
+| Stage | Tool | Description |
+|--------|------|-------------|
+| **1. Data Cleaning** | Python (Pandas) | Handled missing values, converted dates, added `Month`, `Year`, and `Age Group` columns |
+| **2. Data Analysis** | MySQL | Performed revenue aggregation, category and gender-based analysis |
+| **3. Visualization** | Power BI | Created an interactive dashboard for insights |
+| **4. Business Insights** | Power BI / Python | Derived key findings and trends |
 
-data-analytics
-python
-pandas
-matplotlib
-seaborn
-eda
-retail-analysis
-data-visualization
-business-intelligence
-powerbi
-sql
-data-cleaning
-project
-portfolio
+---
 
-🧠 Suggested Repository Title
+## 🧮 Dataset Information
 
-Retail-Sales-Analysis-Python
-(clean, SEO-friendly, and recruiter-searchable)
+**File:** `retail_sales_dataset.csv`  
+**Rows:** 1000  
+**Columns:** 9  
+**Key Columns:**
 
-🌟 Tips for GitHub Upload
+- `Transaction ID`
+- `Date`
+- `Customer ID`
+- `Gender`
+- `Age`
+- `Product Category`
+- `Quantity`
+- `Price per Unit`
+- `Total Amount`
 
-When you upload:
+**Cleaned Output:** `retail_sales_cleaned.csv` (with added columns → `Month`, `Year`, `Age Group`)
 
-Push your folders → data/, notebooks/, visuals/, and README.md.
+---
 
-Add the project description above in your repo “About” section.
+## 📊 Power BI Dashboard Overview
 
-Tag the repo with the topics mentioned above.
+**File:** `powerbi dashboard/Retail_Sales_Performance_Dashboard.pbix`  
+**Template:** `Retail_Sales_Performance_Dashboard.pbit`
 
-Pin this repository on your GitHub profile.
+### 🔹 Dashboard Features
+
+- KPI Cards → Total Revenue, Transactions, Avg Order Value  
+- Line Chart → Monthly Sales Trend  
+- Bar Chart → Product Category Sales  
+- Donut Chart → Gender-Wise Spending  
+- Pie Chart → Age Group Revenue Distribution  
+- Interactive Filters → Year & Category  
+
+![Dashboard Preview](powerbi%20dashboard/dashboard_preview.png)
+
+---
+
+## 🐍 Python Notebooks
+
+Located inside the **`notebooks/`** directory.
+
+| Notebook | Description |
+|-----------|--------------|
+| `analysis.ipynb` | Basic data exploration, summary stats |
+| `visualization.ipynb` | Matplotlib & Seaborn visuals for trends |
+| `deep_visuals.ipynb` | Advanced analysis (gender, category, age) |
+| `README.md` | Notes and summaries inside the notebooks folder |
+
+**Example Analysis Steps:**
+
+- Load raw CSV → clean → transform  
+- Generate Month & Age groups  
+- Save cleaned file for SQL + Power BI  
+
+---
+
+## 🧾 SQL Analysis
+
+Stored inside the **`sql_queries/`** folder, with outputs in `sql_results/`.
+
+| SQL File | Purpose |
+|-----------|----------|
+| `01_create_table.sql` | Create table structure for MySQL |
+| `02_total_sales_summary.sql` | Compute total & average sales |
+| `04_sales_by_month.sql` | Analyze revenue month-wise |
+| `06_gender_wise_sales.sql` | Compare sales by gender |
+| `08_top_customers.sql` | Identify top 10 customers |
+
+---
+
+## 🧠 Key Insights
+
+- 💰 **Total Revenue:** ₹456K  
+- 👕 **Top Categories:** Electronics and Clothing lead in sales  
+- 👩‍🦰 **Gender Trends:** Female customers slightly outspend males  
+- 👨‍🦳 **Age Group:** Adults (36–50) contribute the highest revenue share  
+- 📅 **Seasonality:** Highest sales in festive months (Oct–Dec)
+
+---
+
+## 📂 Final Folder Structure
+
+retail_sales_dataset/
+│
+├── data/
+│ ├── retail_sales_dataset.csv
+│ ├── retail_sales_cleaned.csv
+│
+├── notebooks/
+│ ├── analysis.ipynb
+│ ├── deep_visuals.ipynb
+│ ├── visualization.ipynb
+│ ├── visuals/
+│ ├── README.md
+│
+├── powerbi dashboard/
+│ ├── Retail_Sales_Performance_Dashboard.pbix
+│ ├── Retail_Sales_Performance_Dashboard.pbit
+│
+├── sql_queries/
+│ ├── *.sql (all analysis queries)
+│
+├── sql_results/
+│ ├──*.csv (outputs from queries)
+│
+└── README.md
