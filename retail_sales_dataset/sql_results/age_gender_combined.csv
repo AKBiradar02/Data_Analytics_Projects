@@ -1,0 +1,9 @@
+Age_Group,Gender,total_sales,transactions
+"Adult (36-50)",Female,70790,164
+"Adult (36-50)",Male,68870,149
+"Senior (51-65)",Female,67465,158
+"Senior (51-65)",Male,65845,155
+"Young Adult (26-35)",Female,55115,107
+"Young Adult (26-35)",Male,43365,98
+"Youth (18-25)",Male,45080,88
+"Youth (18-25)",Female,39470,81

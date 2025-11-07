@@ -1,0 +1,5 @@
+Age_Group,total_transactions,total_sales,avg_order_value,percent_contribution
+"Adult (36-50)",313,139660,446.2,30.63
+"Senior (51-65)",313,133310,425.91,29.23
+"Young Adult (26-35)",205,98480,480.39,21.6
+"Youth (18-25)",169,84550,500.3,18.54
